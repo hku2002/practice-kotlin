@@ -1,7 +1,11 @@
 package com.practice.ex2
 
 fun main() {
+    var str: String? = "ABC"
+    println(str?.length)
 
+    str = null
+    println(str?.length ?: 0)
 }
 
 fun startsWithA1(str: String?): Boolean {
