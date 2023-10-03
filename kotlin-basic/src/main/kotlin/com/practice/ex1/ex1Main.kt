@@ -20,7 +20,5 @@ fun main() {
     println(number3)
     val sampleNumber: Long? = null
     println(sampleNumber)
-
-
-
+    
 }
