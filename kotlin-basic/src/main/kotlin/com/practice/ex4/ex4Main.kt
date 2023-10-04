@@ -8,3 +8,9 @@ fun expressionSample(score: Int): String {
         "fail"
     }
 }
+
+fun scoreSample(score: Int) {
+    if (score in 0..100) {
+        println("score 는 0부터 100 사이에 존재한다.")
+    }
+}
