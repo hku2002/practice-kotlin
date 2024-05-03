@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional
 class RestaurantService(
         private val restaurantRepository: RestaurantRepository
 ) {
-    fun findRestaurants() : List<RestaurantResponse> {
+    fun findRestaurants(): List<RestaurantResponse> {
         val restaurant = restaurantRepository.findAll()
         return RestaurantResponse.of(restaurant)
     }

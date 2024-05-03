@@ -19,4 +19,4 @@ class Restaurant(
 
     @Column(nullable = false)
     val telNumber: String
-) : BaseEntity()
+): BaseEntity()
