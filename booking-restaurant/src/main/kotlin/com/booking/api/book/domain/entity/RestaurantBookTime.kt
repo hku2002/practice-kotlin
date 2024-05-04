@@ -12,6 +12,10 @@ class RestaurantBookTime(
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long,
+        @Column(nullable = false)
         val restaurantId: Long,
+        @Column(nullable = false)
         val bookTime: LocalDateTime,
+        @Column(nullable = false)
+        val isBooked: Boolean = false
 ): BaseEntity()
