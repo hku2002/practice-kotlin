@@ -6,6 +6,9 @@ import jakarta.persistence.*
 import java.time.LocalDateTime
 
 @Entity
+@Table(uniqueConstraints = [
+    UniqueConstraint(name = "unq-restaurant-user-time", columnNames = ["restaurant_id", "user_id", "book_time"])
+])
 class Book(
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
