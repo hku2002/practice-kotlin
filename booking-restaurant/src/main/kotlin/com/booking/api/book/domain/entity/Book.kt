@@ -7,7 +7,7 @@ import java.time.LocalDateTime
 
 @Entity
 @Table(uniqueConstraints = [
-    UniqueConstraint(name = "unq-restaurant-user-time", columnNames = ["restaurant_id", "user_id", "book_time"])
+    UniqueConstraint(name = "unq-restaurant-user-time", columnNames = ["restaurant_id", "book_time"])
 ])
 class Book(
         @Id
