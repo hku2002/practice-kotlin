@@ -11,7 +11,7 @@ class Book(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long,
         @ManyToOne(fetch = FetchType.LAZY)
-        val restaurantId: Restaurant,
+        val restaurant: Restaurant,
         val userId: Long,
         val userName: String,
         val phoneNumber: Int,
