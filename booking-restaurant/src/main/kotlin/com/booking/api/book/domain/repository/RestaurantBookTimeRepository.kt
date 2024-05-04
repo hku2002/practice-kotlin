@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface RestaurantBookTimeRepository: JpaRepository<RestaurantBookTime, Long> {
+    fun findAllByRestaurantId(id: Long): List<RestaurantBookTime>
 }
