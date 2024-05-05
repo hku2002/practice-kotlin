@@ -17,6 +17,6 @@ class Book(
         val restaurant: Restaurant,
         val userId: Long,
         val userName: String,
-        val phoneNumber: Int,
+        val phoneNumber: String,
         val bookTime: LocalDateTime
 ): BaseEntity()
