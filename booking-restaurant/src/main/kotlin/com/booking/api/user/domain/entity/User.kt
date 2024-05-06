@@ -4,7 +4,9 @@ import com.booking.api.common.entity.BaseEntity
 import jakarta.persistence.*
 
 @Entity
-@Table(uniqueConstraints = [
+@Table(
+    name = "users",
+    uniqueConstraints = [
     UniqueConstraint(name = "unq-phone_number", columnNames = ["phone_number"]),
     UniqueConstraint(name = "unq-email", columnNames = ["email"])
 ])
