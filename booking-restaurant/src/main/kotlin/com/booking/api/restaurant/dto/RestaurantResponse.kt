@@ -3,7 +3,7 @@ package com.booking.api.restaurant.dto
 import com.booking.api.restaurant.domain.entity.Restaurant
 
 
-class RestaurantResponse (
+data class RestaurantResponse (
         val id: Long,
         val name: String,
         val address: String,
