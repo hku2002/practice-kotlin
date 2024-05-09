@@ -14,7 +14,7 @@ import jakarta.persistence.*
 class User(
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        val id: Long?,
+        val id: Long? = null,
         val email: String,
         val password: String,
         val userName: String,
@@ -23,7 +23,6 @@ class User(
     companion object {
         fun of(request: UserJoinRequest): User {
             return User(
-                id = null,
                 email = request.email,
                 password = request.password,
                 userName = request.userName,
