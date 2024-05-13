@@ -5,3 +5,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+jwt:
+  secret: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJjb25uaWUiLCJVc2VybmFtZSI6IkhhZUd5dSIsImV4cCI6MTcxNTYwMjQyNSwiaWF0IjoxNzE1NjAyNDI1fQ.NSotI0vtvV-gr1JOKWPsjIHz9T5t0ieYBb2a2DCUHhs
